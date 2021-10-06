@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+      <header>
+ <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
+      </header>
+<div class="container"> 
+        
+	<div class="flexcon">
+        <div class="controls">
+            <button data-type="addition" class="btn-con btn">Classic</button>
+            <button data-type="addition" class="btn-con btn">Spock5</button>
+            <button data-type="addition" class="btn-con btn">Spock99</button>
+        </div> 
+        
+		<div class="maind" id="startgame">
+			
+			<p class="vstext" id="vstext"></p>
+			<h1 class="winlose" id="result">Let's Play</h1>
+        </div>
+        <div id="hidden">
+            <div class="mainc">
+			<h1 class="winlose" id="result"></h1>
+			<button type="button" onClick="window.location.reload();" class="btn">Play again</button>
+            </div>
+		</div>
+        <div class="score">
+            <p>
+			<span>Human: <b id="playerscore"></b></span>
+			<span>Computer AI: <b id="aiscore"></b></span>
+			</p>
+        </div> 
+        <div class="choice">
+			<button type="button" onclick="playGame(this)" class="btn">Rock</button>
+			<button type="button" onclick="playGame(this)" class="btn">Paper</button>
+			<button type="button" onclick="playGame(this)" class="btn">Scissors</button>
+            <button type="button" onclick="playGame(this)" class="btn diff" id="hidden">Lizard</button>
+            <button type="button" onclick="playGame(this)" class="btn diff" id="hidden">Spock</button>
+        </div> 
+		</div>
+	</div>
+</div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
