@@ -16,9 +16,9 @@
         
 	<div class="flexcon">
         <div class="controls">
-            <button data-type="addition" class="btn-con btn">Classic</button>
-            <button data-type="addition" class="btn-con btn">Spock5</button>
-            <button data-type="addition" class="btn-con btn">Spock99</button>
+            <button data-type="threeCards" class="btn-con btn control" id="control1">Classic</button>
+            <button data-type="fiveCards" class="btn-con btn control" id="control2">Spock</button>
+            <button data-type="limitless" class="btn-con btn control"id="control3">Limitless</button>
         </div> 
         
 		<div class="maind" id="startgame">
@@ -32,13 +32,13 @@
 			<button type="button" onClick="window.location.reload();" class="btn">Play again</button>
             </div>
 		</div>
-        <div class="score">
+        <div class="score" id="hidden">
             <p>
 			<span>Human: <b id="playerscore"></b></span>
 			<span>Computer AI: <b id="aiscore"></b></span>
 			</p>
         </div> 
-        <div class="choice">
+        <div class="choice" id="hidden">
 			<button type="button" onclick="playGame(this)" class="btn">Rock</button>
 			<button type="button" onclick="playGame(this)" class="btn">Paper</button>
 			<button type="button" onclick="playGame(this)" class="btn">Scissors</button>
@@ -47,6 +47,9 @@
         </div> 
 		</div>
 	</div>
+    <div class="rules">
+        <button class="btn">Rules</button>
+    </div>
 </div>
 
     <script src="assets/js/script.js"></script>
