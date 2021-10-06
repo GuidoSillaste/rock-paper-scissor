@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-color: rgb(245, 242, 238);
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: aqua;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    height: 80px;
+    background-color: #07032b;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.controls {
+    margin: 30px;
+    display: flex;
+    justify-content:space-around;
+    width: 50%;
+}
+.flexcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maind, .mainc {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.winlose {
+    letter-spacing: 5px;
+}
+.choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vstext {
+ font-size: 20px;
+}
+
+.score {
+font-size: 24px;
+font-weight: 700;
+border: 1px solid black;
+width: 350px;
+margin: 30px auto;
+text-align: center;
+}
+.score p {
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    width: 350px;
+    background-color: #4CAF50;
+    border: none;
+    color: blanchedalmond;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+.btn-con {
+   width: 250px;
+}
+#hidden {
+    display: none;
+}
+@media  (max-width: 810px) {
+    header {
+        font-size: 12px;
+    }
+    .controls {
+        width: 100%;
+    }
+}
