@@ -8,7 +8,11 @@ document.getElementById('control2').addEventListener('click', buttonClicked);
 document.getElementById('control3').addEventListener('click', buttonClicked);
 
 function buttonClicked() {
+    document.getElementsByClassName("rules")[0].style.display = "none";
+    document.getElementsByClassName("flexcon")[0].removeAttribute("id");
+    document.getElementsByClassName('controls')[0].style.display = "none";
     game = this.getAttribute("data-type");
+    result = 'Start';
     if (game === "threeCards") {
         playClassic();
     } else if (game === "fiveCards") {
@@ -17,13 +21,10 @@ function buttonClicked() {
         playLimitless();
     } else {
         alert(`Unknown game type: ${game}`);
-        throw `Unknown game type: ${game}. Aborting!`;
     }
-
 }
 function playClassic() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByClassName("score")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].setAttribute("id", "hidden");
     document.getElementsByTagName('button')[8].setAttribute("id", "hidden");
     addAiChoices()
@@ -33,7 +34,6 @@ function playClassic() {
  
 function playSpock() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByClassName("score")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
     document.getElementsByTagName('button')[8].removeAttribute("id");
     addAiChoices()
@@ -43,7 +43,6 @@ function playSpock() {
 }
 function playLimitless() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByClassName("score")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
     document.getElementsByTagName('button')[8].removeAttribute("id");
     addAiChoices()
@@ -70,6 +69,9 @@ function resetscore() {
 }
 
 function showScore() {
+    for(let e = 0; e < document.getElementsByClassName('hidden').length; e++) {
+        document.getElementsByClassName('hidden')[e].style.display = "block";
+    }
     document.getElementById("playerscore").innerText = yourScore;
 	document.getElementById("aiscore").innerText = aiScore;	
 	document.getElementById("result").innerText = result;
@@ -79,7 +81,13 @@ function playGame(humanInput) {
     let yourChoice = humanInput.textContent;
     let aiSelection = getAiSelection();
     let result = calcResult(yourChoice, aiSelection);
-    document.getElementById("vstext").innerText = yourChoice + ' VS ' + aiSelection;
+    let showresult = document.getElementsByClassName('vstext');
+    for (let i = 0; i < showresult.length; i++) {
+        document.getElementsByClassName('vstext')[i].style.display = "flex";
+    }
+    document.getElementById("vstext2").innerText = yourChoice;
+    document.getElementById("vstext3").innerText = aiSelection;
+    document.getElementById("vstext1").innerText =' VS ';
     showScore();
     console.log(game);
     console.log(options)
@@ -105,7 +113,7 @@ function calcResult(you, ai) {
             result = "You Win";
             endgame();
         } else {
-            result = "Wins";
+            result = "You Win";
             return;
         }
     } else {
@@ -147,7 +155,7 @@ function calcResult(you, ai) {
     if (you === ai) {
         result = 'Draw'
         return;
-    } else if (parameter) {
+    } else if (parameter2) {
         yourScore += 1;
         if (yourScore == lives) {
             result = "You Win";
@@ -169,9 +177,20 @@ function calcResult(you, ai) {
 }
 }
 
+function hideimage() {
+    let rules = document.getElementsByClassName('imagecontainer')[0].style.display;
+    if(rules === "none") {
+        document.getElementsByClassName('imagecontainer')[0].style.display = "block";
+        console.log('1');
+    } else {
+        document.getElementsByClassName('imagecontainer')[0].style.display = "none";
+        console.log('2');
+    }
+}
 function endgame() {
     let ele = document.getElementById('startgame');
     ele.remove();
+    document.getElementsByClassName("hidden2")[0].remove();
     document.getElementById("hidden").style.display = "block";
     showScore();
 }

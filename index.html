@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-      <header>
- <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
-      </header>
-<div class="container"> 
-        
-	<div class="flexcon">
-        <div class="controls">
-            <button data-type="threeCards" class="btn-con btn control" id="control1">Classic</button>
-            <button data-type="fiveCards" class="btn-con btn control" id="control2">Spock</button>
-            <button data-type="limitless" class="btn-con btn control"id="control3">Limitless</button>
-        </div> 
-        
-		<div class="maind" id="startgame">
-			
-			<p class="vstext" id="vstext"></p>
-			<h1 class="winlose" id="result">Let's Play</h1>
-        </div>
-        <div id="hidden">
-            <div class="mainc">
-			<h1 class="winlose" id="result"></h1>
-			<button type="button" onClick="window.location.reload();" class="btn">Play again</button>
-            </div>
-		</div>
-        <div class="score" id="hidden">
-            <p>
-			<span>Human: <b id="playerscore"></b></span>
-			<span>Computer AI: <b id="aiscore"></b></span>
-			</p>
-        </div> 
-        <div class="choice" id="hidden">
-			<button type="button" onclick="playGame(this)" class="btn">Rock</button>
-			<button type="button" onclick="playGame(this)" class="btn">Paper</button>
-			<button type="button" onclick="playGame(this)" class="btn">Scissors</button>
-            <button type="button" onclick="playGame(this)" class="btn diff" id="hidden">Lizard</button>
-            <button type="button" onclick="playGame(this)" class="btn diff" id="hidden">Spock</button>
-        </div> 
-		</div>
-	</div>
-    <div class="rules">
-        <button class="btn">Rules</button>
-    </div>
-</div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Rock Paper Scissors</title>
+   </head>
+   <body>
+    <div class="container">
+       <header>
+            <h1 onClick="window.location.reload();">Rock, Paper, Scissors, Lizard, Spock Game</h1>
+       </header>
+       <main>
+         <div class="flexcon">
+              <div class="resultbox">
+                  <div class="hidden2">
+                  <div class="vstext " id="vstext1">
+                    <p>scorched</p>
+                  </div>
+                  <div class="vstext" id="vstext2">
+                    <p>scorched</p>
+                  </div>
+                  <div class="vstext" id="vstext3">
+                    <p>scorched</p>
+                  </div>
+                  </div>
+                 <div class="mainm" id="startgame">
+                    <h1 class="winlose" id="result">Play Game</h1>
+                 </div>
+                 <div id="hidden">
+                    <h1 class="winlose maind" id="result"></h1>
+                    <button type="button" onClick="window.location.reload();" class="btn" id="center">Play again</button> 
+                 </div>
 
-    <script src="assets/js/script.js"></script>
-</body>
+                 <div class="score hidden" id="leftscore">
+                     <p>  
+                        <span>Human: <b id="playerscore"></b></span>
+                     </p>
+                 </div>
+                 <div class="score hidden" id="rightscore">   
+                  <p>
+                    <span>Computer: <b id="aiscore"></b></span>
+                  </p>
+                 </div>
+              </div>
+         </div>
+         <div class="controlContainer">
+            <div class="controls">
+               <button data-type="threeCards" class="btn-con btn control" id="control1">Classic</button>
+               <button data-type="fiveCards" class="btn-con btn control" id="control2">Spock</button>
+               <button data-type="limitless" class="btn-con btn control"id="control3">Limitless</button>
+            </div>
+            <div class="choice" id="hidden">
+               <button type="button" onclick="playGame(this)" class="btn">Rock</button>
+               <button type="button" onclick="playGame(this)" class="btn">Paper</button>
+               <button type="button" onclick="playGame(this)" class="btn">Scissors</button>
+               <button type="button" onclick="playGame(this)" class="btn diff" class="hidden">Lizard</button>
+               <button type="button" onclick="playGame(this)" class="btn diff" class="hidden">Spock</button>
+            </div>
+            <div class="rules">
+               <button class="btn" onclick="hideimage()">Rules</button>
+               <div class="imagecontainer" style="display: none;">
+                   <div class="imagediv">
+                    <img src="assets/images/rock-paper-scissors-lizard-spock.jpg" alt="rules" class="imgrules">
+                </div>
+               </div>
+            </div>
+         </div>
+        </main>
+      </div>
+      <script src="assets/js/script.js"></script>
+   </body>
 </html>
