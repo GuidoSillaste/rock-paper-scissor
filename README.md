@@ -102,7 +102,7 @@ On this site many updates are still to follow making it bigger and whit more opt
 
 - HTML
 - CSS
-- Pen and Paper
+- Pen, Paper and English
 - Javascript
 
 #### Programs
@@ -113,6 +113,10 @@ On this site many updates are still to follow making it bigger and whit more opt
 - Git to store the code changes.
 - Github used to store the repository.
 - Fontawesome used for icons.
+- famicon.io for famicon.
+- Emailjs.
+- W3C Markup validation and W3C Jigsaw CSS validation.
+- JShint.
 
 ### Testing
 
