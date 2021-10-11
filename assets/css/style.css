@@ -269,65 +269,69 @@ footer {
     font-size: 36px;
 }
 .formcontainer {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.contactmain {
+    height: 800px;
 }
 form {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 520px;
     background-color: #07032b;
     border: 5px double #ffebcd;
     color: #ffebcd;
     font-size: 20px;
-    position: relative;
+    margin: 60px auto;
+    border-radius: 40px;
 }
 input {
     height: 40px;
     font-size: 24px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+#submit {
+    width: 80%;
+    background-color: #7cc5e8;
+    font-weight: 800;
 }
 textarea {
     resize: none;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 3px;
 }
 .fname {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 30px;
     font-size: 24px;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
 }
 .email {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
     font-size: 24px;
-    text-align: center;
+    width: 90%;
+    margin: 20px auto;
 }
 .subm {
-    width: 100%;
-    bottom: 40px;
-    position: absolute;
+    width: 90%;
     text-align: center;
-    
+    border-radius: 10px;
+    margin: 50px auto 0 auto;
 }
 .texta {
-    width: 80%;
+    width: 90%;
     height: 30%;
-    background-color: blanchedalmond;
-    bottom: 120px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    position: absolute;
+    margin: 40px auto;
+    border-radius: 10px;
+    font-size: 24px;
 }
 .contactus {
     font-size: 24px;
@@ -335,10 +339,12 @@ textarea {
     color: #ffebcd;
     background-color: #07032b;
     line-height: 0;
-    margin: 50px;
-    padding: 0 10px 0 10px;
+    margin: 20px auto;
+    width: 280px;
+    padding: 0 10px;
     border-style: double;
     border-width: 5px;
+    border-radius: 20px;
 }
 @media only screen and (max-width: 400px) and (max-height: 670px) {
     .vstext {
@@ -440,8 +446,11 @@ textarea {
     }
 }
 @media (max-height: 500px) {
-    main {
+    .main {
         height: 530px;
+    }
+    .mainc {
+        height: 800px;
     }
     .controlContainer {
         align-items: center;
