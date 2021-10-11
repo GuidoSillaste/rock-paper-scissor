@@ -1,8 +1,6 @@
-# Medical plants
+# Rock, Paper, Scissors, Lizard, Spock Game
 
-This website was created to introduce diffrent medical plants that would otherwise be forgoten or missunderstood. It provides a basic intoduction of herbs and a herbalist that describes some of the beneficial effects of medical plants. I divided the medical plants to 3 different categories where each one gets either harder to find or is suppresesd by bigpharma.
 
-This is the first of five Milestone Projects that the developer must complete during their Full Stack Web Development Program at The Code Institute.
 
 ![Responsiveness](assets/markupimage/Responsive.png)
 
@@ -12,10 +10,9 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 ## Table of contents
 
-
-  - [User Stories](#User-Stories)
-  - [Design](#Design)
-  - [Features](#Features)
+- [User Stories](#User-Stories)
+- [Design](#Design)
+- [Features](#Features)
 - [Technologies Used](#Technologies-Used)
   - [Languages](#Languages)
   - [Programs](#Programs)
@@ -28,21 +25,25 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 ## User Stories
 
-### External user’s goal:
+### External user’s goal
 
-    The site’s users want to play an online game that has elements of chance.
+- The site’s users want to play an online game that has elements of chance.
+- The site’s users want to play an online game that has diffrent levels.
+- The site’s users want to leave a feedback.
+- The The site’s users want to play again.
 
-### Site owner's goal:
+### Site owner's goal
 
-    The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
-    To learn javascript.
+- The site’s goal is to provide a challenging game with increasing levels of difficulty to entertain online users.
+- To learn javascript.
+- To gain feedback.
 
-### Potential features to include:
+### Potential features to include
 
-    Pattern matching functionality
-    A limited number of tries before the game is over
-    A score tracking system
-    The ability to play against the computer
+- Pattern matching functionality
+- A limited number of tries before the game is over
+- A score tracking system
+- The ability to play against the computer
 
 ### Design
 
@@ -125,8 +126,6 @@ Some of the new tabs did not work at first was fixed by adding _blank.
 
 The live site has been tested on Firefox. The site has also been tested on several devices using dev tools to confirm that its responsive on all devices.
 
-
-
 ## Validator Testing
 
 - HTML no errors were returned when passing through the official [W3C validator]
@@ -137,6 +136,7 @@ The live site has been tested on Firefox. The site has also been tested on sever
 I ran several tests in Lighthouse and noticed that the performance was low, the reason for this was that the image sizes were too large. I resized the images and readded them and got the score I wanted. The score for Desktop was higher than for Mobile but I am satisfied with the results.
 
 ![Light house]
+
 ### Deployment
 
 This site was deployed using GitHub Pages with the following the steps below:
@@ -173,4 +173,4 @@ The following sites were used on a more regular basis:
 
 ## Acknowledgement
 
-Self learned
+Self learned.

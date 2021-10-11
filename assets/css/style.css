@@ -12,6 +12,22 @@ body {
 a {
     text-decoration: none;
 }
+main a {
+    color: rgb(255, 235, 205);
+    background-color: #2b2a28;
+    font-size: 36px;
+    padding: 10px 20px;
+    border-style: ridge;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    box-shadow: 0 0 3px 5px #7cc5e8;
+}
+main a:hover {
+    box-shadow: 0 0 3px 5px rgb(255, 235, 205);
+    color: #7cc5e8;
+    transform: scale(1.1);
+}
 header {
     height: 80px;
     background-color: #07032b;
@@ -24,7 +40,7 @@ header {
     padding: 0;
     cursor: pointer;
 }
-header h1:hover {
+header a:hover {
     color: #7cc5e8;
 }
 header a {
@@ -260,13 +276,14 @@ footer {
 }
 .contact a:hover, .social a:hover{
     color: #7cc5e8;
+    font-size: 36px;
 }
 .social {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 36px;
+    font-size: 32px;
 }
 .formcontainer {
     width: 100%;
@@ -284,6 +301,7 @@ form {
     font-size: 20px;
     margin: 60px auto;
     border-radius: 40px;
+    box-shadow: 0 0 3px 5px #7cc5e8;;
 }
 input {
     height: 40px;
@@ -295,6 +313,15 @@ input {
     width: 80%;
     background-color: #7cc5e8;
     font-weight: 800;
+    border: 3px solid #ffebcd;
+    letter-spacing: 2px;
+
+}
+#submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 5px #7cc5e8;
+    color: #7cc5e8;
+    background-color: #07032b;
 }
 textarea {
     resize: none;
