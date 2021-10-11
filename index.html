@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="assets/css/style.css">
-      <title>Rock Paper Scissors</title>
+      <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
    </head>
    <body>
     <div class="container">
@@ -16,22 +16,24 @@
          <div class="flexcon">
               <div class="resultbox">
                   <div class="hidden2">
-                  <div class="vstext " id="vstext1">
-                    <p>scorched</p>
-                  </div>
-                  <div class="vstext" id="vstext2">
-                    <p>scorched</p>
-                  </div>
-                  <div class="vstext" id="vstext3">
-                    <p>scorched</p>
-                  </div>
+                     <div class="vstext " id="vstext1">
+                       <p>scorched</p>
+                     </div>
+                     <div class="vstext" id="vstext2">
+                       <p>scorched</p>
+                     </div>
+                     <div class="vstext" id="vstext3">
+                       <p>scorched</p>
+                     </div>
                   </div>
                  <div class="mainm" id="startgame">
                     <h1 class="winlose" id="result">Play Game</h1>
                  </div>
                  <div id="hidden">
-                    <h1 class="winlose maind" id="result"></h1>
-                    <button type="button" onClick="window.location.reload();" class="btn" id="center">Play again</button> 
+                    <div class="maind">
+                    <h1 class="winlose" id="result"></h1>
+                    </div>
+                    <button type="button" onClick="window.location.reload();" class="btn" id="center">Play Again</button> 
                  </div>
 
                  <div class="score hidden" id="leftscore">
@@ -48,19 +50,19 @@
          </div>
          <div class="controlContainer">
             <div class="controls">
-               <button data-type="threeCards" class="btn-con btn control" id="control1">Classic</button>
-               <button data-type="fiveCards" class="btn-con btn control" id="control2">Spock</button>
-               <button data-type="limitless" class="btn-con btn control"id="control3">Limitless</button>
+               <button data-type="threeCards" class="btn-con control" id="control1">Classic</button>
+               <button data-type="fiveCards" class="btn-con control" id="control2">Spock</button>
+               <button data-type="limitless" class="btn-con control"id="control3">99Lives</button>
             </div>
             <div class="choice" id="hidden">
-               <button type="button" onclick="playGame(this)" class="btn">Rock</button>
-               <button type="button" onclick="playGame(this)" class="btn">Paper</button>
-               <button type="button" onclick="playGame(this)" class="btn">Scissors</button>
-               <button type="button" onclick="playGame(this)" class="btn diff" class="hidden">Lizard</button>
-               <button type="button" onclick="playGame(this)" class="btn diff" class="hidden">Spock</button>
+               <button type="button" data-type="Rock" onclick="playGame(this)" class="btn datagrap"><i class="fas fa-hand-rock"></i></button>
+               <button type="button" data-type="Paper" onclick="playGame(this)" class="btn datagrap"><i class="fas fa-hand-paper"></i></button>
+               <button type="button" data-type="Scissors" onclick="playGame(this)" class="btn datagrap"><i class="fas fa-hand-scissors"></i></button>
+               <button type="button" data-type="Lizard" onclick="playGame(this)" class="btn diff datagrap" class="hidden"><i class="fas fa-hand-lizard"></i></button>
+               <button type="button" data-type="Spock" onclick="playGame(this)" class="btn diff datagrap" class="hidden"><i class="fas fa-hand-spock"></i></button>
             </div>
             <div class="rules">
-               <button class="btn" onclick="hideimage()">Rules</button>
+               <button class="btn-con" onclick="hideimage()">Rules</button>
                <div class="imagecontainer" style="display: none;">
                    <div class="imagediv">
                     <img src="assets/images/rock-paper-scissors-lizard-spock.jpg" alt="rules" class="imgrules">
@@ -69,7 +71,19 @@
             </div>
          </div>
         </main>
+        <footer>
+            <div class="contact">
+                 <a href="contact.html">Contact Us</a>
+            </div>
+           
+            <div class="social">
+                <a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
       </div>
-      <script src="assets/js/script.js"></script>
+      <script src="assets/js/game.js"></script>
+      <script src="https://kit.fontawesome.com/a1ed16b4ac.js" crossorigin="anonymous"></script>
    </body>
 </html>
