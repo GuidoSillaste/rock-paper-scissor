@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title></title>
+    <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
 
 </head>
 <body class="contactmain">
@@ -17,7 +17,7 @@
         <div class="contactus">
             <h2>Contact Us</h2>
         </div>
-        <form action="" method="post">
+        <form action="" method="post" id="contact-form">
             <input type="hidden" name="contact_number">
             <div class="fname">
                 <label for="fname">Name:</label>
@@ -32,7 +32,7 @@
                 <textarea name="message" id="message"></textarea>
             </div>
             <div class="subm">
-                <input id="submit" type="submit" value="Submit">
+                <input id="submit" type="submit" value="Send">
             </div>
         </form>
     </div>
@@ -48,7 +48,30 @@
             <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="https://kit.fontawesome.com/a1ed16b4ac.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('YOUR_USER_ID');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
