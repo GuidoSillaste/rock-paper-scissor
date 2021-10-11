@@ -12,6 +12,9 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 - [User Stories](#User-Stories)
 - [Design](#Design)
+- [Colour Scheme](#Colour-Scheme)
+- [Typography](#Typography)
+- [Images](#Images)
 - [Features](#Features)
 - [Technologies Used](#Technologies-Used)
   - [Languages](#Languages)
@@ -47,27 +50,28 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 ### Design
 
+
+### Wireframes
+
+Figma was used to a lesser extent to make wireframes.
+[here](assets/wireframes)
+
+
 #### Colour Scheme
 
-The main colours used throughout the website are a mixture of blue and lightbrown, with Red for footer hover.
+The main colours used throughout the website are a mixture of rgb(255, 235, 205), #2b2a28, #7cc5e8, #f1ce32 and white.
 
 #### Typography
 
-The pairing of the fonts [Roboto](https://fonts.google.com/specimen/Roboto "Link to Roboto Google Font") and [Lato](https://fonts.google.com/specimen/Lato "Link to Lato Google Font") is used throughout the website with Sans Serif as the fallback font in case of import failure.
+Main fonts used are Verdana and Tahoma which are browser native and the Sans Serif as the fallback font in case of not being supported failure.
 
-For features that needed to be highlighted, such as the featured single on the Homepage, the font [Montserrat](https://fonts.google.com/specimen/Montserrat "Link to Montserrat Google Font") was used, with Sans Serif as the fallback. This was in order to create a consistency with the digital artwork of the single's release.
+#### Images
 
-#### Imagery
-
-For images were specially chosen to fit plants used
-
-The imagery  visually represents the purpose of the website.
-
-All imagery provides alternative text to be used in the event that the element cannot be rendered.
+only 2 images were used one for background and other to describe the rules.
 
 ### Features
 
-The features of the site are very basic. Navigation bar stays at the top allowing to access all parts of the site. Footer stays at the bottom of the page giving people the option to navigate to all parts of the site. Landing page is simple whit a opening hero image followed by a herbalist intro and 3 sample plants. medical plants page is again starts whit a hero and is followed by 3x4 boxes of plants based on there difficulty to get. ON about page i make a simple intro to why the page would be benefit you.On contact page i give you a chance to fill in a form if you want to add a plant and why and contact table.
+The features of the site are very basic. Navigation bar stays at the top allowing to access all parts of the site. Footer stays at the bottom of the page giving people the option to navigate to contact page. Landing page is simple whit a opening hero image followed by a herbalist intro and 3 sample plants. medical plants page is again starts whit a hero and is followed by 3x4 boxes of plants based on there difficulty to get. ON about page i make a simple intro to why the page would be benefit you.On contact page i give you a chance to fill in a form if you want to add a plant and why and contact table.
 
 - Navigation Bar
 - navigation bar stays at the top of the screen.On smaller screens the icon moves from navbar to the top of navbar.
