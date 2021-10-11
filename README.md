@@ -103,15 +103,15 @@ On this site many updates are still to follow making it bigger and whit more opt
 - HTML
 - CSS
 - Pen and Paper
+- Javascript
 
 #### Programs
 
 - little wireframes.
 - Pen and Paper wireframes.
-- Virtual code studio for code
+- Virtual code studio for code.
 - Git to store the code changes.
 - Github used to store the repository.
-- Google fonts was used for all text on the site.
 - Fontawesome used for icons.
 
 ### Testing

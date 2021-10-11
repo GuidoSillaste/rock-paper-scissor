@@ -182,6 +182,9 @@ main {
 .hidden2 {
     display: flex;
 }
+#hidden2, #hidden3 {
+    display: none;
+}
 .btn {
     width: 100px;
     height: 100px;

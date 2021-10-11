@@ -37,8 +37,8 @@ function buttonClicked() {
 
 function playClassic() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByTagName('button')[7].setAttribute("id", "hidden");
-    document.getElementsByTagName('button')[8].setAttribute("id", "hidden");
+    document.getElementsByClassName('diff')[0].style.display = "none"
+    document.getElementsByClassName('diff')[1].style.display = "none"
     addAiChoices();
     showScore();
  }    
@@ -47,8 +47,6 @@ function playClassic() {
 
 function playSpock() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByTagName('button')[7].removeAttribute("id");
-    document.getElementsByTagName('button')[8].removeAttribute("id");
     addAiChoices();
     showScore();
 }
@@ -57,8 +55,6 @@ function playSpock() {
 
 function playLimitless() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByTagName('button')[7].removeAttribute("id");
-    document.getElementsByTagName('button')[8].removeAttribute("id");
     addAiChoices();
     showScore(); 
 }
