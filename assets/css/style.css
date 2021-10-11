@@ -9,8 +9,11 @@ body {
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 header {
-    height: 10%;
+    height: 80px;
     background-color: #07032b;
     color: rgb(255, 235, 205);
     display: flex;
@@ -23,6 +26,9 @@ header {
 }
 header h1:hover {
     color: #7cc5e8;
+}
+header a {
+    color: rgb(255, 235, 205);
 }
 .container {
     height: 100vh;
@@ -39,14 +45,14 @@ main {
     box-shadow: inset 0px 0px 15px 10px  #7cc5e8;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
 }
 .flexcon {
     height: 50%;
     width: 98%;
     margin: 0 auto;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -57,10 +63,11 @@ main {
 }
 .controls {
     display: flex;
-    justify-content: center;
+    justify-content:start;
     align-items: center;
-    height: 50%;
-    margin-top: 9px;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -70px;
 }
 .resultbox {
     position: relative;
@@ -68,6 +75,7 @@ main {
     height: 98%;
     background-color:#f1ce32;
     border: 5px inset;
+    box-shadow: 0 0 5px 5px inset;
 }
 .score {
     border: 5px groove;
@@ -76,6 +84,7 @@ main {
     text-align:left;
     line-height: 0;
     position: absolute;
+    box-shadow: 0 0 0 3px gray;
 }
 #leftscore {
     bottom: 0px;
@@ -91,7 +100,7 @@ main {
 .hidden {
     display: none;
 }
-.mainm {
+.mainm, .maind {
     font-size: 16px;
     width: 250px;
     border-style: ridge;
@@ -104,25 +113,9 @@ main {
     margin: 20px auto ;
     left: 0;
     right: 0;
+    box-shadow: 0 0 0 5px gray;
 }
-.maind {
-    font-size: 28px;
-    width: 250px;
-    height: 63px;
-    border-style: ridge;
-    border-width: 5px;
-    line-height: 0;
-    padding: 5px;
-    text-align: center;
-    position: absolute;
-    bottom: 51px;
-    margin: 20px auto;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #center {
     position: absolute;
     margin: auto auto;
@@ -131,8 +124,12 @@ main {
     bottom: 0;
     right: 0;
     width: 200px;
-    height: 60px;
-    border-style: outset;
+    height: 40px;
+    padding: 10px;
+    font-size: 22px;
+    line-height: 0;
+    border: 3px outset;
+    box-shadow: 0 0 0 5px gray; 
 }
 .vstext {
     width: 120px;
@@ -150,17 +147,18 @@ main {
     margin: 0 auto;
     left: 0;
     right: 0;
-    font-size: 16px;
+    font-size: 36px;
     font-weight: 800;
+    
 }
 #vstext2 {
-    left: 0;
+    left: 5px;
     border-radius: 40px;
     border: 5px ridge;
     background-color:rgb(59, 207, 59);
 }
 #vstext3 { 
-    right: 0;
+    right: 5px;
     border-radius: 40px;
     border: 5px ridge;
     background-color: rgb(238, 50, 50);
@@ -171,17 +169,26 @@ main {
 .btn {
     width: 100px;
     height: 100px;
-    background-color: #4CAF50;
     border: 2px inset;
     box-shadow: 0 0 1px 4px inset;
-    color: blanchedalmond;
+    background-color: #7cc5e8;
     padding: 15px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 60px;
     margin: 20px 6px;
     cursor: pointer;
+    font-weight: 700;
+}
+.btn-con {
+    width: 300px;
+    height: 80px;
+    border: 2px inset;
+    box-shadow: 0 0 1px 4px inset;
+    margin: 20px 6px;
+    cursor: pointer;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 .choice {
     display: flex;
@@ -192,6 +199,7 @@ main {
 }
 .rules {
     text-align: center;
+    margin: 50px 0;
 }
 #hidden {
     display: none;
@@ -228,9 +236,253 @@ main {
 button:active {
     background-color: brown;
 }
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #2b2a28;
+    box-shadow: 0px 0px 15px 10px #7cc5e8 inset;
+    display: flex;
+    align-items: center;
+    
+}
+.contact {
+    width: 50%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 0;
 
+}
+.contact a, .social a {
 
-@media only screen and (min-width: 460px) and (max-width: 950px) and (max-height:500px){
+    color: rgb(255, 235, 205);
+}
+.contact a:hover, .social a:hover{
+    color: #7cc5e8;
+}
+.social {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 36px;
+}
+.formcontainer {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form {
+    width: 500px;
+    height: 500px;
+    background-color: #07032b;
+    border: 5px double #ffebcd;
+    color: #ffebcd;
+    font-size: 20px;
+    position: relative;
+}
+input {
+    height: 40px;
+    font-size: 24px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+.fname {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 24px;
+    text-align: center;
+}
+.subm {
+    width: 100%;
+    bottom: 40px;
+    position: absolute;
+    text-align: center;
+    
+}
+.texta {
+    width: 80%;
+    height: 30%;
+    background-color: blanchedalmond;
+    bottom: 120px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.contactus {
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #ffebcd;
+    background-color: #07032b;
+    line-height: 0;
+    margin: 50px;
+    padding: 0 10px 0 10px;
+    border-style: double;
+    border-width: 5px;
+}
+@media only screen and (max-width: 400px) and (max-height: 670px) {
+    .vstext {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+    #vstext2, #vstext3 {
+        border-radius: 30px;
+    }
+    #vstext1 {
+        font-size: 24px;
+    }
+    .mainm, .maind {
+        font-size: 14px;
+        width: 200px;
+        padding: 0px;
+        margin: 10px auto;
+    }
+ 
+    #leftscore, #rightscore {
+        font-size: 16px;
+        width: 48%;
+        margin: 5px;
+    }
+    .imagecontainer {
+        height: 320px;
+    }
+    .btn {
+        width: 40%;
+        height: 60px;
+        font-size: 18px;
+        margin: 4px 6px;
+    }
+    #center {
+        margin: 60px auto;
+    }
+    .btn-con {
+        width: 250px;
+        height: 60px;
+        margin: 10px 6px;   
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .contact {
+        font-size: 30px;
+        width: 100%;
+    }
+    .social {
+        font-size: 30px;
+        width: 100%;
+    }
+    footer {
+        height: 120px;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+}
+@media (max-height: 400px) {
+    .vstext {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+    #vstext2, #vstext3 {
+        border-radius: 30px;
+    }
+    #vstext1 {
+        font-size: 24px;
+    }
+    .mainm, .maind {
+        font-size: 14px;
+        width: 200px;
+        padding: 0px;
+        margin: 10px auto;
+    }
+ 
+    #leftscore, #rightscore {
+        font-size: 16px;
+        width: 48%;
+        margin: 5px;
+    }
+    .imagecontainer {
+        height: 320px;
+    }
+    .btn {
+        width: 40%;
+        height: 60px;
+        font-size: 18px;
+        margin: 4px 6px;
+    }
+    #center {
+        margin: 60px auto;
+    }
+    .btn-con {
+        width: 250px;
+        height: 60px;
+        margin: 10px 6px;   
+    }
+}
+@media (max-height: 500px) {
+    main {
+        height: 530px;
+    }
+    .controlContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px) and (max-height: 359px) {
+    #leftscore, #rightscore {
+        font-size: 14px;
+        width: 48%;
+        margin: 5px;
+        font-weight: 800;
+    }
+    .mainm, .maind {
+        font-size: 14px;
+        width: 200px;
+        padding: 0px;
+        margin: 10px auto;
+    }
+    .vstext {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+    #vstext2, #vstext3 {
+        border-radius: 30px;
+    }
+    #vstext1 {
+        font-size: 24px;
+    }
+    .btn {
+        width: 40%;
+        height: 60px;
+        font-size: 18px;
+        margin: 10px 6px;
+    }
+   
+}
+@media only screen and (min-width: 420px) and (max-width: 950px) and (max-height:500px){
     #center {
         margin: 26% auto;
     }
@@ -239,28 +491,47 @@ button:active {
     }
     main {
         flex-direction: row;
+       
     }
     .flexcon {
         height: 100%;
+        width: 50%;
+    }
+    .controls {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 0;
+        height: 50%;
+        flex-wrap: wrap;
+    }
+    .rules {
+        margin: 0;
     }
     .controlContainer {
         height: 100%;
+        width: 50%;
     }
     .imagecontainer {
-        margin: auto 0;
-        left: 20px;
+        margin: auto auto;
         width: 460px;
         height: 100vh;
     }
+    .btn-con {
+        width: 250px;
+        height: 80px;
+        margin: 5px 6px;   
+    }
+  
 }
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     header {
         font-size: 12px;
     }
 }
 @media  only screen and (min-width: 800px) and (min-height: 800px) {
     header {
-        font-size: 12px;
+        font-size: 16px;
     }
     .flexcon {
         width: 80%;
