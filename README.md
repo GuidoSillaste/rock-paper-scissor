@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors, Lizard, Spock Game
 
-![Responsiveness](assets/markupimage/Responsive.png)
+![Responsiveness](assets/images/screenshot.png)
 
 ## Demo
 
