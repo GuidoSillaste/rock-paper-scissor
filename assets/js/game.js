@@ -3,10 +3,16 @@ let yourScore = 0;
 let aiScore = 0;
 let game = "";
 let options = ['Rock', 'Paper', 'Scissors'];
+
+/* event listener for options and rules image was to big had to make it close other way */
+
 document.getElementById('control1').addEventListener('click', buttonClicked);
 document.getElementById('control2').addEventListener('click', buttonClicked);
 document.getElementById('control3').addEventListener('click', buttonClicked);
 document.getElementsByTagName('img')[0].addEventListener('click', () => document.getElementsByClassName('imagecontainer')[0].style.display = "none");
+
+/* function for options giving diffrent result on diffrent buttons */
+
 function buttonClicked() {
     document.getElementsByClassName("rules")[0].style.display = "none";
     document.getElementsByClassName("flexcon")[0].removeAttribute("id");
@@ -26,6 +32,9 @@ function buttonClicked() {
         alert(`Unknown game type: ${game}`);
     }
 }
+
+/* classic option */
+
 function playClassic() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].setAttribute("id", "hidden");
@@ -34,6 +43,8 @@ function playClassic() {
     showScore();
  }    
  
+ /* spock option */
+
 function playSpock() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
@@ -41,6 +52,9 @@ function playSpock() {
     addAiChoices();
     showScore();
 }
+
+/* last option made to have a lot more lives */
+
 function playLimitless() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
@@ -48,6 +62,9 @@ function playLimitless() {
     addAiChoices();
     showScore(); 
 }
+
+/* adds ai choices */
+
 function addAiChoices() {
     if(game ==="threeCards") {
           if(options.includes('Lizard', 'Spock')) {
@@ -57,8 +74,11 @@ function addAiChoices() {
         if(options.includes('Lizard', 'Spock') === false) {
             options.push('Lizard', 'Spock');
         } 
-    }
+    } 
 }
+
+/* reveals the score on load */
+
 function showScore() {
     for(let e = 0; e < document.getElementsByClassName('hidden').length; e++) {
         document.getElementsByClassName('hidden')[e].style.display = "block";
@@ -67,6 +87,9 @@ function showScore() {
 	document.getElementById("aiscore").innerText = aiScore;	
 	document.getElementById("result").innerText = result;
 }
+
+/* gets your input via onclick */
+
 function playGame(humanInput) {
     let yourChoice = humanInput.getAttribute("data-type");
     let aiSelection = getAiSelection();
@@ -78,16 +101,17 @@ function playGame(humanInput) {
     document.getElementById("vstext2").innerText = yourChoice;
     document.getElementById("vstext3").innerText = aiSelection;
     document.getElementById("vstext1").innerText =' VS ';
-
     showScore();
-    console.log(yourChoice);
-    console.log(options)
 }
+
+/* caclulates ai choice */
 
 function getAiSelection() {
     let aiSelector = options[Math.floor(Math.random()*options.length)];
     return aiSelector;
 }
+
+/* caclulates who wins */
 
 function calcResult(you, ai) {
     let parameter = (you === 'Rock' && ai === 'Scissors') || (you === 'Paper' && ai === 'Rock') || (you === 'Scissors' && ai === 'Paper');
@@ -168,6 +192,7 @@ function calcResult(you, ai) {
 }
 }
 
+/* hides the image when loaded and reveals or hides when clicked */
 function hideimage() {
     let rules = document.getElementsByClassName('imagecontainer')[0].style.display;
     if(rules === "none") {
@@ -178,6 +203,9 @@ function hideimage() {
         console.log('2');
     }
 }
+
+/* restarts the game from the options part */
+
 function endgame() {
     let ele = document.getElementById('startgame');
     ele.remove();

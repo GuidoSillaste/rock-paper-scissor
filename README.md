@@ -1,7 +1,5 @@
 # Rock, Paper, Scissors, Lizard, Spock Game
 
-
-
 ![Responsiveness](assets/markupimage/Responsive.png)
 
 ## Demo
@@ -50,12 +48,10 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 ### Design
 
-
 ### Wireframes
 
 Figma was used to a lesser extent to make wireframes.
 [here](assets/wireframes)
-
 
 #### Colour Scheme
 
