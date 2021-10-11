@@ -15,12 +15,13 @@ a {
 main a {
     color: rgb(255, 235, 205);
     background-color: #2b2a28;
-    font-size: 36px;
-    padding: 10px 20px;
+    font-size: 40px;
+    padding: 14px 26px;
     border-style: ridge;
     border-radius: 20px;
     letter-spacing: 2px;
     font-weight: 700;
+    cursor: pointer;
     box-shadow: 0 0 3px 5px #7cc5e8;
 }
 main a:hover {
@@ -41,6 +42,9 @@ header {
     cursor: pointer;
 }
 header a:hover {
+    color: #7cc5e8;
+}
+header h1:hover {
     color: #7cc5e8;
 }
 header a {
@@ -182,7 +186,7 @@ main {
 .hidden2 {
     display: flex;
 }
-#hidden2, #hidden3 {
+#hidden2, #hidden3, #hidden4 {
     display: none;
 }
 .btn {
@@ -202,11 +206,15 @@ main {
 .btn-con {
     width: 300px;
     height: 80px;
-    border: 2px inset;
-    box-shadow: 0 0 1px 4px inset;
+    color: rgb(255, 235, 205);
+    border: 5px ridge rgb(255, 235, 205);
+    background-color: #2b2a28;
+    box-shadow: 0 0 3px 5px #7cc5e8;
     margin: 20px 6px;
     cursor: pointer;
+    font-weight: 700;
     font-size: 30px;
+    border-radius: 20px;
     letter-spacing: 2px;
 }
 .choice {

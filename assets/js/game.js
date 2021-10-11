@@ -37,8 +37,8 @@ function buttonClicked() {
 
 function playClassic() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
-    document.getElementsByClassName('diff')[0].style.display = "none"
-    document.getElementsByClassName('diff')[1].style.display = "none"
+    document.getElementsByClassName('diff')[0].style.display = "none";
+    document.getElementsByClassName('diff')[1].style.display = "none";
     addAiChoices();
     showScore();
  }    
@@ -82,6 +82,7 @@ function showScore() {
     document.getElementById("playerscore").innerText = yourScore;
 	document.getElementById("aiscore").innerText = aiScore;	
 	document.getElementById("result").innerText = result;
+    document.getElementById("result2").innerText = result;
 }
 
 /* gets your input via onclick */
@@ -116,7 +117,7 @@ function calcResult(you, ai) {
     
     if(game === "threeCards"){
     if (you === ai) {
-        result = 'Draw'
+        result = 'Draw';
         return;
     } else if (parameter) {
         yourScore += 1;
@@ -140,7 +141,7 @@ function calcResult(you, ai) {
 } else if(game === "fiveCards") {
     lives = 5;
     if (you === ai) {
-        result = 'Draw'
+        result = 'Draw';
         return;
     } else if (parameter2) {
         yourScore += 1;
@@ -164,7 +165,7 @@ function calcResult(you, ai) {
 } else {
     lives = 99;
     if (you === ai) {
-        result = 'Draw'
+        result = 'Draw';
         return;
     } else if (parameter2) {
         yourScore += 1;
