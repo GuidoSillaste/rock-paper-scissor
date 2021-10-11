@@ -1,4 +1,4 @@
-let result = 'Start';
+let result = 'Pick One';
 let yourScore = 0;
 let aiScore = 0;
 let game = "";
@@ -6,7 +6,7 @@ let options = ['Rock', 'Paper', 'Scissors'];
 document.getElementById('control1').addEventListener('click', buttonClicked);
 document.getElementById('control2').addEventListener('click', buttonClicked);
 document.getElementById('control3').addEventListener('click', buttonClicked);
-
+document.getElementsByTagName('img')[0].addEventListener('click', () => document.getElementsByClassName('imagecontainer')[0].style.display = "none");
 function buttonClicked() {
     document.getElementsByClassName("rules")[0].style.display = "none";
     document.getElementsByClassName("flexcon")[0].removeAttribute("id");
@@ -15,10 +15,13 @@ function buttonClicked() {
     result = 'Start';
     if (game === "threeCards") {
         playClassic();
+        document.getElementsByClassName('flexcon')[0].style.display = "flex";
     } else if (game === "fiveCards") {
         playSpock();
+        document.getElementsByClassName('flexcon')[0].style.display = "flex";
     } else if (game === "limitless" ) {
         playLimitless();
+        document.getElementsByClassName('flexcon')[0].style.display = "flex";
     } else {
         alert(`Unknown game type: ${game}`);
     }
@@ -27,8 +30,7 @@ function playClassic() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].setAttribute("id", "hidden");
     document.getElementsByTagName('button')[8].setAttribute("id", "hidden");
-    addAiChoices()
-    resetscore();
+    addAiChoices();
     showScore();
  }    
  
@@ -36,19 +38,15 @@ function playSpock() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
     document.getElementsByTagName('button')[8].removeAttribute("id");
-    addAiChoices()
-    resetscore();
+    addAiChoices();
     showScore();
-    
 }
 function playLimitless() {
     document.getElementsByClassName("choice")[0].removeAttribute("id");
     document.getElementsByTagName('button')[7].removeAttribute("id");
     document.getElementsByTagName('button')[8].removeAttribute("id");
-    addAiChoices()
-    resetscore();
-    showScore();
-    
+    addAiChoices();
+    showScore(); 
 }
 function addAiChoices() {
     if(game ==="threeCards") {
@@ -61,13 +59,6 @@ function addAiChoices() {
         } 
     }
 }
-function resetscore() {
-    document.getElementById("aiscore").innerText = aiScore;	
-	document.getElementById("result").innerText = result;
-     yourScore = 0;
-     aiScore = 0;
-}
-
 function showScore() {
     for(let e = 0; e < document.getElementsByClassName('hidden').length; e++) {
         document.getElementsByClassName('hidden')[e].style.display = "block";
@@ -76,9 +67,8 @@ function showScore() {
 	document.getElementById("aiscore").innerText = aiScore;	
 	document.getElementById("result").innerText = result;
 }
-
 function playGame(humanInput) {
-    let yourChoice = humanInput.textContent;
+    let yourChoice = humanInput.getAttribute("data-type");
     let aiSelection = getAiSelection();
     let result = calcResult(yourChoice, aiSelection);
     let showresult = document.getElementsByClassName('vstext');
@@ -88,8 +78,9 @@ function playGame(humanInput) {
     document.getElementById("vstext2").innerText = yourChoice;
     document.getElementById("vstext3").innerText = aiSelection;
     document.getElementById("vstext1").innerText =' VS ';
+
     showScore();
-    console.log(game);
+    console.log(yourChoice);
     console.log(options)
 }
 
