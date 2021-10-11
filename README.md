@@ -90,11 +90,15 @@ The features of the site are very basic. Navigation bar stays at the top allowin
 ![aboutpage]
 
 - Contact page
-![formpage]
+![formpage](assets/)
 
 #### Features left to implement
 
-On this site many updates are still to follow making it bigger and whit more options. Which includes a search option whit the help of javascript. A lot of medical plants are still unknown.
+- Plan to change last of the difficulties to 8 hand moves.
+- Adding a top score board.
+- Increasing lives and difficulty settings.
+- Ability to change color options.
+- Adding more text to the game .
 
 ### Technologies Used
 
@@ -122,24 +126,29 @@ On this site many updates are still to follow making it bigger and whit more opt
 
 Basic user testing works.
 
-During testing box images did nothold size properly, text overflowed and buttons did not stay in place.This was fixed by making 3 divs inside the box for image,text and button.
+Ran in to a lot of difficulties whit CSS which took up 50% of the coding time other half divided to 20% javascript and html, the rest 30% looking up info on emailjs tutorials and trying to implement my more radical ideas which sadly did not come to life since they were not written in plain javascript.
 
-Footer did not stay at the bottom of the page when no content. Was fixed by making the body a grid and giving it min height and space fill for main div.
+During testing box images did nothold size properly so had to add lots of media queries, buttons did not stay in place.
 
-Some of the new tabs did not work at first was fixed by adding _blank.
+Multiple times javascript did return undefined. This was mainly caused by multiple ids whit same name or inline style not behaving.
 
 The live site has been tested on Firefox. The site has also been tested on several devices using dev tools to confirm that its responsive on all devices.
 
 ## Validator Testing
 
-- HTML no errors were returned when passing through the official [W3C validator]
+- HTML 2 warnings were returned when passing through the official [W3C validator] since they were left embty to store javascript values.
+[result](assets/validations/game.png)
 - CSS no errors were returned when passing through the official [Jigsaw validator]
+
+[Here](assets/validations/jigsawvalidator.png)
 
 ## Lighthouse Testing
 
-I ran several tests in Lighthouse and noticed that the performance was low, the reason for this was that the image sizes were too large. I resized the images and readded them and got the score I wanted. The score for Desktop was higher than for Mobile but I am satisfied with the results.
+I ran several tests in Lighthouse and noticed that the performance was high, the reason for this was that the actual content was 2 picture and a game.  The score for Desktop was higher than for Mobile but I am satisfied with the results.
 
-![Light house]
+![Light house](assets/validations/lighthousegame)
+
+For more lighthousetests go [Here](assets/validations)
 
 ### Deployment
 
@@ -158,6 +167,7 @@ This site was deployed using GitHub Pages with the following the steps below:
 
 #### Content
 
+- Email sending JavaScript API code was written with the help of the official EmailJS tutorial [Emailjs](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
 - The fonts were taken from [Google fonts](https://fonts.google.com/).
 - The icons in the footer were taken from [Fontawesome](https://fontawesome.com/).
 - Help with coding was taken from [https://www.w3schools.com/]
@@ -177,4 +187,4 @@ The following sites were used on a more regular basis:
 
 ## Acknowledgement
 
-Self learned.
+Self learned. Mentor Mo helped me to notice what was still lacking in the project.
