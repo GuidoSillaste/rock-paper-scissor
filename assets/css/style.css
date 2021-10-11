@@ -217,6 +217,10 @@ main {
     border-radius: 20px;
     letter-spacing: 2px;
 }
+.btn-con:hover {
+    box-shadow: 0 0 3px 5px rgb(255, 235, 205);
+    color: #7cc5e8;
+}
 .choice {
     display: flex;
     justify-content: center;
