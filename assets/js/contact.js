@@ -11,7 +11,7 @@ window.onload = function() {
         this.contact_number.value = Math.random() * 100000 | 0;
 
         // these IDs from the previous steps
-        
+
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
                 console.log('SUCCESS!');
@@ -20,3 +20,4 @@ window.onload = function() {
             });
     });
 }
+
