@@ -62,21 +62,22 @@ only 2 images were used one for background and other to describe the rules.
 
 ### Features
 
-The
+- Main content
 
+- Header only has a clickable h1 element which main function is to redirect you back to the index page.
+![header](assets/screenshots/headerclose.png)
 
+- Footer has only social links and contact link
+- The footer has 3 fontawesome icons for facebook, instagram and twitter and are connect to respective homepages.Footer stays at the bottom of the screen even if no content.
+![Footer](assets/screenshots/footerclose.png)
 
-- Footer
-- The footer has 4 fontawesome icons for facebook, instagram, youtube and twitter and are connect to respective homepages.Footer stays at the bottom of the screen even if no content.
-![Footer]
+- Landing page Has only left whit 1 button in the middle of the screen to redirect you to the game page, rest being header and footer that contains the social links . Footer has only social links and contact link
+![homepage](assets/screenshots/landingclose.png)
 
-- Landing page
-- Landing page has a starting medical plant that is well known but not used for its medical benefits.Background color isset to lightclay.It has one video file that slows the page down a bit and gives 3 more intros to well known plants.
-![homepage]
-
-- Medical page
-- On this page i added 12 more plants,each whit lowerd accessibility caoused by restriction put on em.
-![Gamepage]
+- Game page has the game and its options both of which have simple style. Game option has 3 difficulties baing Classic(3 hands and 3 lives), Spock(5 hands 5 lives) and 99Lives(5 hands and 99 lives). Rules shows a div over everything showing the rules of the game and can be closed by either clicking on it or clicking rules button again. When game ends a play again button appears which brings you back to options.
+![options](assets/screenshots/gameoption.png)
+![Gamepage](assets/screenshots/maingame.png)
+![rules](assets/screenshots/rulestext.png)
 
 - Contact page
 ![formpage](assets/)
@@ -89,11 +90,11 @@ The
 - Ability to change color options.
 - Adding more text to the game .
 
-### Technologies Used
+## Technologies Used
 
 ### Wireframes
 
-Figma was used to a lesser extent to make wireframes.
+Figma was used to a lesser extent to make wireframes. Wireframes are very simple only ment to show the layout.
 [here](assets/wireframes)
 
 #### Languages
@@ -142,7 +143,7 @@ The live site has been tested on Firefox and Chrome. The site has also been test
 
 I ran several tests in Lighthouse and noticed that the performance was high, the reason for this was that the actual content was 2 picture and a game.  The score for Desktop was higher than for Mobile but I am satisfied with the results.
 
-![Light house](assets/validations/lighthousegame)
+![Light house](assets/validations/lighthousegame.png)
 
 For more lighthousetests go [Here](assets/validations)
 
