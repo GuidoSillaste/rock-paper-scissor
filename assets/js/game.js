@@ -90,7 +90,7 @@ function showScore() {
 function playGame(humanInput) {
     let yourChoice = humanInput.getAttribute("data-type");
     let aiSelection = getAiSelection();
-    let result = calcResult(yourChoice, aiSelection);
+    calcResult(yourChoice, aiSelection);
     let showresult = document.getElementsByClassName('vstext');
     for (let i = 0; i < showresult.length; i++) {
         document.getElementsByClassName('vstext')[i].style.display = "flex";

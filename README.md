@@ -131,6 +131,8 @@ Figma was used to a lesser extent to make wireframes. Wireframes are very simple
 
 Basic user testing works.
 
+Did not have time implement all changes.
+
 Ran in to a lot of difficulties whit CSS which took up 50% of the coding time other half divided to 20% javascript and html, the rest 30% looking up info on emailjs tutorials and trying to implement my more radical ideas which sadly did not come to life since they were not written in plain javascript.
 
 During testing box images did nothold size properly so had to add lots of media queries, buttons did not stay in place.
@@ -157,6 +159,12 @@ I ran several tests in Lighthouse and noticed that the performance was high, the
 
 For more lighthousetests go [Here](assets/validations)
 
+### JShint 
+
+ran some test dont know why it gives error on emailjs
+
+![jshint](assets/validations/jshint1)
+![jshint](assets/validations/jshint2)
 ### Deployment
 
 This site was deployed using GitHub Pages with the following the steps below:
