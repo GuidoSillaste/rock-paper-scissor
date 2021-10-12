@@ -48,11 +48,6 @@ A live demo of the site can be found  [here](https://guidosillaste.github.io/roc
 
 ### Design
 
-### Wireframes
-
-Figma was used to a lesser extent to make wireframes.
-[here](assets/wireframes)
-
 #### Colour Scheme
 
 The main colours used throughout the website are a mixture of rgb(255, 235, 205), #2b2a28, #7cc5e8, #f1ce32 and white.
@@ -67,11 +62,9 @@ only 2 images were used one for background and other to describe the rules.
 
 ### Features
 
-The features of the site are very basic. Navigation bar stays at the top allowing to access all parts of the site. Footer stays at the bottom of the page giving people the option to navigate to contact page. Landing page is simple whit a opening hero image followed by a herbalist intro and 3 sample plants. medical plants page is again starts whit a hero and is followed by 3x4 boxes of plants based on there difficulty to get. ON about page i make a simple intro to why the page would be benefit you.On contact page i give you a chance to fill in a form if you want to add a plant and why and contact table.
+The
 
-- Navigation Bar
-- navigation bar stays at the top of the screen.On smaller screens the icon moves from navbar to the top of navbar.
-![Navigation Bar]
+
 
 - Footer
 - The footer has 4 fontawesome icons for facebook, instagram, youtube and twitter and are connect to respective homepages.Footer stays at the bottom of the screen even if no content.
@@ -83,11 +76,7 @@ The features of the site are very basic. Navigation bar stays at the top allowin
 
 - Medical page
 - On this page i added 12 more plants,each whit lowerd accessibility caoused by restriction put on em.
-![medicalpage]
-
-- About page
-- Here i simply added reasons to why the site was made.
-![aboutpage]
+![Gamepage]
 
 - Contact page
 ![formpage](assets/)
@@ -101,6 +90,11 @@ The features of the site are very basic. Navigation bar stays at the top allowin
 - Adding more text to the game .
 
 ### Technologies Used
+
+### Wireframes
+
+Figma was used to a lesser extent to make wireframes.
+[here](assets/wireframes)
 
 #### Languages
 
@@ -132,15 +126,17 @@ During testing box images did nothold size properly so had to add lots of media 
 
 Multiple times javascript did return undefined. This was mainly caused by multiple ids whit same name or inline style not behaving.
 
-The live site has been tested on Firefox. The site has also been tested on several devices using dev tools to confirm that its responsive on all devices.
+The live site has been tested on Firefox and Chrome. The site has also been tested on several devices using dev tools to confirm that its responsive on all devices.
 
 ## Validator Testing
 
-- HTML 2 warnings were returned when passing through the official [W3C validator] since they were left embty to store javascript values.
-[result](assets/validations/game.png)
-- CSS no errors were returned when passing through the official [Jigsaw validator]
+- HTML 2 warnings were returned when passing through the official [W3C validator](https://validator.w3.org/) since they were left embty to store javascript values.
 
-[Here](assets/validations/jigsawvalidator.png)
+![result](assets/validations/game.png)
+
+- CSS no errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+
+![Here](assets/validations/jigsawvalidator.png)
 
 ## Lighthouse Testing
 
