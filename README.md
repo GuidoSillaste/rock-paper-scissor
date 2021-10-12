@@ -89,6 +89,7 @@ only 2 images were used one for background and other to describe the rules.
 ![formpage](assets/screenshots/contactclose.png)
 
 - My simple mail.
+
 ![mail](assets/screenshots/feedmeshot.png)
 
 #### Features left to implement
