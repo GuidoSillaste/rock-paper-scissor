@@ -75,12 +75,21 @@ only 2 images were used one for background and other to describe the rules.
 ![homepage](assets/screenshots/landingclose.png)
 
 - Game page has the game and its options both of which have simple style. Game option has 3 difficulties baing Classic(3 hands and 3 lives), Spock(5 hands 5 lives) and 99Lives(5 hands and 99 lives). Rules shows a div over everything showing the rules of the game and can be closed by either clicking on it or clicking rules button again. When game ends a play again button appears which brings you back to options.
+
+- Options has diffrent levels
 ![options](assets/screenshots/gameoption.png)
+
+- Maingame has score couter and ai choice is random
 ![Gamepage](assets/screenshots/maingame.png)
+
+- Rules
 ![rules](assets/screenshots/rulestext.png)
 
-- Contact page
-![formpage](assets/)
+- Contact page i 1 simple form that sends me a mail with the form info and prevents embty submits.
+![formpage](assets/screenshots/contactclose.png)
+
+- My simple mail.
+![mail](assets/screenshots/feedmeshot.png)
 
 #### Features left to implement
 
